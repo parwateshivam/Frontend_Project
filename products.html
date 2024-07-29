@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--? ## Step 1: Don't Forget To LIKE SHARE & SUBSCRIBE TO THAPA TECHNCIAL YOUTUBE CHANNEL 👉 https://www.youtube.com/thapatechnical -->
+
+    <link rel="stylesheet" href="style.css" />
+    <title>js ecom website</title>
+</head>
+
+<body>
+    <header class="section-navbar">
+        <section class="top_txt">
+            <div class="head container">
+                <div class="head_txt">
+                    <p>Free shipping, 30-day return or refund guarantee.</p>
+                </div>
+                <div class="sing_in_up">
+                    <a href="# ">SIGN IN</a>
+                    <a href="# ">SIGN UP</a>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img
+                        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBhMQEhMWFhMWGBYZGBcWExsYGRsWGBcXFxUTFhcZKCggHR4lHhgYITMhJSkrMS4uGR8/ODU4QyotOisBCgoKDg0OGBAQGislHx83NSstLS0tLTAtLTErKy8rNystLSs3Ni0tKy4uLi4tKysrLSsxNDUrKy4tLSstNSstN//AABEIAIsBagMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAgcEBQYDAQj/xABJEAACAQIEBAMEAwsICwEAAAABAgADEQQFEiEGBzFREyJBMmFxkRSBkggjQlJTc6GxssHSOGJyhKKztPAXMzU2N0N0gsLD4RX/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQIDBAYF/8QAIREBAQACAgEEAwAAAAAAAAAAAAECEQMxEgQTIfEiQXH/2gAMAwEAAhEDEQA/ALniIhBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERARE12YZ5lmXL98qqD2HmPyW8aWxxyyupNtjE5ihxvl1TMRRZKiXtZ3UKN+hIvcA950davRoJd2VR3ZgB8zJssWz4s8LJlO3pE0uK4syLDda6k9ku/7NxNViOYOWofvdOo/xso/WT+iTMMr1FsfT8mXWNdfE4Crx5javsUkX4ksf3Ca7MOMMyp0dT1SOyoAtz2Ft5f2cm09Dyd3UWjY2nyUvwfmuZ43jWgTVc62OoFyQUCsStjtawly1atOhSLMwVRuWYgADuSdhKZY+Nc/Jx+F1tOJpqHFvDdev4a43DF+lhXS9+3WbkbyrMiYOHzrKsTi/BTEUWq3I0LVQvdb6hpBvtY3+EzoCIiAiIgIiICIiAia3P8/yrh3BeNiqopoTpBIJJbsqqCT8pk5dj8JmmBSvRcPScXVl6EdP13FvS0DJiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIHji8OmLwrU2vpYEGxsbHsZh5dkOW5eQUpjV+M3mb7TdPqmyiTteZ5SeMvwpnizNnzvNmdgAFuiD10hjYk99zNKST13nV8wsm/wDzs18ZR97rXPuFT8Nfr9r6z2nIs06Mda+HoeLPG8eNw6TBnorhRvMGrXVOp+odZjPiGY7D5zSZaUy5NNu+YrSHlFz+j/7NZXrPWe7G5/z0ngTUPrPljG9ufPktdpyow/jcVa/SnSc/WSqD9ozR86c0x2b8c08t8TRRU0VAJsmurpJqv3tqA36AHuZ2fJnD74qr+bQf2mb/AMZlczuWacYOMTRcU8Sq6bsD4dRRfSGtupF/aAO2xHS3NyX8nzOa7zc1m3InDUcpZqGKdq6qSA6KEYgX07brfvcyX3P/ABBmVWtVy+trNNEFSkWB8gDKrUwT6eZSB6WM54ZxzK5dACsrvh12HijxqNrgACqp1J7l1Dr0lrcueP8AB8a4dgE8KvTsXpk6hpJsKiNtceh9QfqJzZKe4CxWHwPOCpVquqU0qY0szGwAC1dyZcmV8yuEM0x4oU8UutjZdaOgY3sAGcAXPoL7yiuH8hw/E3NJ8LVJFNq+IL6TYlUNR9IPpfSBf3zZ85uDMq4SxeGbChlSsKl0Zi1mp6NwTvvr6HtA/R52E47H80eDMDiTTbFqxHU06b1F+2gKn6iZxvMTiLHU+TuB858TFJRSo1zdkFLU+/diFv3BYesxuWnK7Is94NTFYrxDUr69Ol9PhqrsgKgbE3UnzXHTbuFv5Rm+XZ3ghWw1VKtM7akN7Hsw6g+4gGarMOOeGstzr6FVxAWvqRdBRz5qgUoCwXTuGXe+195THKrE4rhjmm+A1XR6lbD1PQMaWvw6gHe6/JzNbzXwr4/m1Xor7VR8Mg+LUaKj9cC6zzQ4MGP8H6Yuq9tWh/Dv+ctpt772986upiaFPCGqWHhhS5YbjQBqLC3UW32lM8xeVeSZHwY+Iw3ieLQCFyz3FRSwViR0U732t0mZyhzavjuWeOoOSfo61lS/pTekzBfqIb5wOzw/Mng/EYapUXFrppgFiUqL7RsAoZQWJt0W5mTw7x1w1xJifCw2IVqnojKyMfU6Q4Gr6ryg+UfCOE4u4gdK9/BpU9bKraSxJCqt+oG5Jt2mTzT4Yo8CcT0HwbOiMoqU7tdkqI1iAx6j2Tv3gWxziy/h7H5JRGOxLYa1Q+FUFNqnmK+ZWVR0IHXboJsOF8Xw5wvy+pVadcnBICfGZGuS9UgsUA1C7sRa204fnljhmfAeXYj8qy1Pt0NX758xX8m8f0V/xggd03Mvg9cu+kfS10aig8lTUWAViFTTqIAZd7W36zZcN8W5FxOrfRa61CvtLYq4HS5RgDb39JTPJvgHJuKctr4jFBm0v4aKrlAPKGLkjcnzAD02M1fC+EfhbnPTwtNyVTEGjc9WpvdbNbYmxH1iB+hs7zrLMhwXjYmqtKnewLHqbX0qo3Y7HYAznsHzP4NxlJ2XFgeGNRDU6im3S6grdvgLmVLzlxWKz3mWuBBstPwKNME7BqwR2e3clwD7kE6DmJyryLI+CnxGH8QVqAQszPfxAWVW1L0B3uLW6QLU4d4lyjiWg74Sr4iowVjoZbMRcDzgX27TbSo/ucv9gYv88n93LchBERAREQEREBERAREQEREBERAREQEREDW8Q5TTzrKHoHYkXQ/iuPZb9x9xMp7J+Hczz3H1aFPSjUv9YajEaTcrp8oJvcH09D7r3nOE4tNThfiOlmVP2Kv3uug/CsOoHcqOvoUH4xmmFvUdnpubKS4T99f1zw5WZz+Vw/2qn8E+/wCi7OfyuH+1U/glnUc2y6tgxWFan4ZF9RcAfA36H3GamtxplPilKIq4lx+Dh6TP/a2X9MTLNHv81+nD/wCi7OvyuH+1U/gkTytzs/8ANw/26n8E6vOeJs8wWXtXbD0sLSBA1YiqajknoFpUvwvcT6G81vCOaJxZjPPmOJLp5/AREwyEAjf72WZx0uNfxEt5Zdq3k5NbrpOCOHW4ayg0mcO7OXYqDpuQFCi+5sB1PeVFzUq59wrzCXHK9Q0HelUpjW3hkoFD0WANh7JNuzS/Zh5rToVsIUqUlq02spRlDKSdlurAi17C/pe8yt257d3arsZzxyKvlLr9FrmoyEeGwpmkSRbSz6rlf+z6ppvud8kxhzmtjipFEUzSUkbM7OjEL3ChN/iJZNPg7g0V7/QKIPpekCp2Y3C3tbyN1A+G86GjiMPh8H5E000soAVVW2wsouAAL+thIFActv8AjUfzuM/Zqzf/AHSfXL/6z/6JZuCyjIMJmfj08JTStq/1i0lDDxAt2Y9dzUI2v6yWb4bIs5RDisOlUL7HiohsHCksuo9CANhvt02gV3xVw/is95K4BqKlqlCnRq6QLlk8MrUCjuLhvgpml5ec2sBw1wquDr0artSL+GaekhgzM+lyxBWxYi4B2ttLrwtbDYTA6KVPStNU0oAFGgkqmkDYDynbbpNHmOQcH43GGpWwVI1PMzHw1DXUvq1BT5jdG3sRt13ECp+UGWY7iXmJUzNltTR61V2A8vi1dWmkpPU+ct7gu/UTT82sRVwnNfEVU9tGwzL6+ZaFEjb4ifo3L2wOFthqVMUgg2pqqKq7BtOlDtswN7W363lA8d/8df6xgv2MPA2XH3NzBcScJthKNGolSro8Uvp0qAQxWmQSWuRa5C7XnRcqMjxGVcscZWqKVOISq6gix8NaLKjW9/mI9xHed2eCuF/pxrfQsP4l738IWve99Ps399pncQ7cPYn8xW/u2gfmjlfxjT4Mz1q1RGejUTQ4S2obhlZQbAm4tYkbEzL494krcyeLKKYWk4FhSoo1tZLG7OwW4X5mwW95u+QOAweZ43G0a9NKlM0qd0dQymz7Gx9R3l2ZPw1keR1C2Gw1KkxFiyoNVu2o72914FYc9sEuW8D5fQHSk6oPglHT+6QxX8m8f0V/xgltZrk+W5zSVMRRp1VU3AqIGANrXF/dInJMqbKfohoU/o/5LQNHta/Z6e1v8YQrj7nX/dTEf9Qf7qnOMr/ygP66v7pfmVZRl2T0SmHo06Sk6itNAoLWAuQPWwExzw3kZzP6V9Go+Pq1+L4Y16/xtXW/vhKkeduU4/JOOFzNFOioaTK9rqtakqr4bdjamrb9bm3Q29+OObdDifhJ8JRw1RKlUL4pLAqqqyu2gjc3ItcgbGXBxvnFPIeFcRinprVVAt6bGytqdU0m4P43YyguIePEz3LWwWCy2hhRWKh/AQNUqWYMqDQi7XA2sb2gd79zl/sDF/nk/YluThOTnC+L4Y4VIrjTWrOajIeqLpCoje+wJPbVb0ndwgiIgIiICIiAiIgIiICIiAiIgIiICIiAnNcT8JLxFj0d67oirp8NVBF7k6gT0J2B2PsidLEmWzpbHK43cVBxzl9DhPE4enhqKtrDM1SuPFuVIGgIfJt1Pl9RLJ4Uxb4/h2hVNNaZdblVXSvUjUq+gIFx7jNjiMPQxSaaiK4vezKGF+9jPUCwk3LcXy5PKSXty/MPh7E8RZIqUreJTcOFJsG2KlbnYHe4v2985nl3wZmuW52MTXXw1RWCqWUszMCvRSQAAT1PaWdETKyaVmd1onxlVhv3B+sG4/SJ9iVUY7YLDsD5eu/tMO/Qg7DzNsNtzPTwKfh6bWHXYkb3vcEbiekQPBcHh1tZbabWsSOmm1x620r17Typ5bhkJ2Jv/OIstgNA39nyjbpMyIHn4FK3QdAPqUkqPqJPzkWwtBifL1vcXNjq1E3HQ+03zntECApIKpf1PXc29Be3S+wF7X2g0qbPcqL97C/zk4gIO4iIEEpU6Z2UD4ACTiICIiAiIgRq06damVZQynqGAIPxBnjhsDg8Ib06VND/ADKar+yJkRAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAyNC9o0L2kohKOhe0aF7SUQI6F7RoXtJRAjoXtGhe0lECOhe0aF7SUQI6F7RoXtJRAjoXtGhe0lECOhe0aF7SUQI6F7T5U0IhJHQE7C527AdZOfCARA09LP8E7kEEb+XYHV5Fc9NgRqtb/IhS4iwjJdqdRdtXsBvL4aVCSUJA2dRv6zbfRqFgNC2FrDSNrWtb5T4MLhwR5F+yO1v1bQNdUzzB0qjBlYab3NhsV1Egi9/ZVm6bjp1F/tLPMFUqOLWVaQraiOtPe7AfAA267i4E2Bw2HJ9hfU+yOpIJPzAPxE+rQojoq9/ZHUm5Pzga987wdOtoKtruF06QTqNttjbYkD657vj6H0A1lUsuhX2W10YXBBaw2G5HUdtxMlMNQp9EUdOigez7Py9J9ejSqUtBUFfxSARYdBbpA1NXPFQOfCPkZ1INw3lXVcC246b/wA5bXvPOnxJharAKhvYEgjT21WJFiQWAsN7322m68KlptpFtxaw6H2h9c+DDUAfYX0/BH4Oy/IdO0DWHNnFO/hKfKzbVDuA2hbeX8M+z3mwwlYYhWumkqxUg2PT1273vPXw6Y9B6enbp8op0qdInSoFzc2AFz6k26mBLQvaNC9pKIEdC9o0L2kogR0L2jQvaSiBHQvaNC9pKIEdC9o0L2kogR0L2jQvaSiBHQvaNC9pKIEdC9o0L2kogR0L2jQvaSiB/9k=" />
+                </a>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="addToCart.html" class="nav-link add-to-cart-button" id="cartValue">
+                            <i class="fa-solid fa-cart-shopping"> 0 </i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== Start Extra Product Section ========== -->
+    <section class="section-extra-product">
+        <div class="container grid grid-three--cols">
+            <div class="div-extra grid grid-two--cols">
+                <div class="extra-text">
+                    <p>new year sale</p>
+                    <h3>get and extra 50% off</h3>
+                    <a href="#">Show now</a>
+                </div>
+                <div class="extra-img extra-laptop">
+                    <img src="./images/lapi.png" alt="" />
+                </div>
+            </div>
+
+            <div class="div-extra grid grid-two--cols">
+                <div class="extra-text">
+                    <p>new year sale</p>
+                    <h3>40% discount on speakers</h3>
+                    <a href="#">Show now</a>
+                </div>
+                <div class="extra-img">
+                    <img src="./images/headphoneEcom.png" alt="" />
+                </div>
+            </div>
+
+            <div class="div-extra grid grid-two--cols">
+                <div class="extra-text">
+                    <p>new year sale</p>
+                    <h3>get and extra 50% off</h3>
+                    <a href="#">Show now</a>
+                </div>
+                <div class="extra-img">
+                    <img src="./Images/iphone.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Extra Product Section ========== -->
+
+    <!-- ========== Start policy ========== -->
+    <section class="section-policy">
+        <div class="container grid grid-four--cols">
+            <div class="div-policy">
+                <div class="icons">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <div class="div-policy-text">
+                    <p>worldwide shipping</p>
+                    <p>order above $100</p>
+                </div>
+            </div>
+
+            <div class="div-policy">
+                <div class="icons">
+                    <i class="fa-solid fa-rotate"></i>
+                </div>
+                <div class="div-policy-text">
+                    <p>Easy 30 Day Returns</p>
+                    <p>Back Returns in 7 Days</p>
+                </div>
+            </div>
+
+            <div class="div-policy">
+                <div class="icons">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                </div>
+                <div class="div-policy-text">
+                    <p>money back guarantee</p>
+                    <p>guarantee with in 30-Days</p>
+                </div>
+            </div>
+
+            <div class="div-policy">
+                <div class="icons">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <div class="div-policy-text">
+                    <p>Easy Online Support</p>
+                    <p>24/7 Any time support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End policy ========== -->
+
+    <!-- ========== Start Our Products Section ========== -->
+
+    <section class="section-products container">
+        <div class="">
+            <h2 class="section-common--heading">Checkout Shivam Store</h2>
+        </div>
+
+        <section class="container">
+            <div id="productContainer"></div>
+        </section>
+    </section>
+
+    <!-- ========== Start Product Template Section ========== -->
+
+    <template id="productTemplate">
+        <div class="cards" id="cardValue">
+            <article class="information [card]">
+                <span class="category"></span>
+                <div class="imageContainer">
+                    <img class="productImage" src="" alt="" />
+                </div>
+                <h2 class="productName"></h2>
+
+                <div class="productRating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p class="productDescription"></p>
+
+                <div class="productPriceElement">
+                    <p class="productPrice"></p>
+                    <p class="productActualPrice"></p>
+                </div>
+
+                <div class="productStockElement">
+                    <p class="productProperty">Total Stocks Available:</p>
+                    <p class="productStock"></p>
+                </div>
+
+                <div class="productQuantityElement">
+                    <p class="productProperty">Quantity(Pieces)</p>
+                    <div class="stockElement">
+                        <button class="cartIncrement">+</button>
+                        <p class="productQuantity">1</p>
+                        <button class="cartDecrement">-</button>
+                    </div>
+                </div>
+
+                <button class="add-to-cart-button">
+                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                </button>
+            </article>
+        </div>
+    </template>
+
+    <!-- ========== End Product Template Section ========== -->
+
+    <!-- ========== End Our Products Section ========== -->
+
+    <!--* ========== Start Footer Section ========== -->
+
+    <footer class="section-footer">
+        <script src="footer.js"></script>
+    </footer>
+    <!-- Include the footer JavaScript file -->
+
+    <!--* ========== End Footer Section ========== -->
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

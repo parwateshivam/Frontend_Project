@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>js ecom website</title>
+</head>
+
+<body>
+  <header class="section-navbar">
+    <section class="top_txt">
+      <div class="head container">
+        <div class="head_txt">
+          <p>Free shipping, 30-day return or refund guarantee.</p>
+        </div>
+        <div class="sign_in_up">
+          <a href="# ">SIGN IN</a>
+          <a href="# ">SIGN UP</a>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBhMQEhMWFhMWGBYZGBcWExsYGRsWGBcXFxUTFhcZKCggHR4lHhgYITMhJSkrMS4uGR8/ODU4QyotOisBCgoKDg0OGBAQGislHx83NSstLS0tLTAtLTErKy8rNystLSs3Ni0tKy4uLi4tKysrLSsxNDUrKy4tLSstNSstN//AABEIAIsBagMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAgcEBQYDAQj/xABJEAACAQIEBAMEAwsICwEAAAABAgADEQQFEiEGBzFREyJBMmFxkRSBkggjQlJTc6GxssHSOGJyhKKztPAXMzU2N0N0gsLD4RX/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQIDBAYF/8QAIREBAQACAgEEAwAAAAAAAAAAAAECEQMxEgQTIfEiQXH/2gAMAwEAAhEDEQA/ALniIhBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERARE12YZ5lmXL98qqD2HmPyW8aWxxyyupNtjE5ihxvl1TMRRZKiXtZ3UKN+hIvcA950davRoJd2VR3ZgB8zJssWz4s8LJlO3pE0uK4syLDda6k9ku/7NxNViOYOWofvdOo/xso/WT+iTMMr1FsfT8mXWNdfE4Crx5javsUkX4ksf3Ca7MOMMyp0dT1SOyoAtz2Ft5f2cm09Dyd3UWjY2nyUvwfmuZ43jWgTVc62OoFyQUCsStjtawly1atOhSLMwVRuWYgADuSdhKZY+Nc/Jx+F1tOJpqHFvDdev4a43DF+lhXS9+3WbkbyrMiYOHzrKsTi/BTEUWq3I0LVQvdb6hpBvtY3+EzoCIiAiIgIiICIiAia3P8/yrh3BeNiqopoTpBIJJbsqqCT8pk5dj8JmmBSvRcPScXVl6EdP13FvS0DJiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIHji8OmLwrU2vpYEGxsbHsZh5dkOW5eQUpjV+M3mb7TdPqmyiTteZ5SeMvwpnizNnzvNmdgAFuiD10hjYk99zNKST13nV8wsm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sSOmm1x620r17Typ5bhkJ2Jv/OIstgNA39nyjbpMyIHn4FK3QdAPqUkqPqJPzkWwtBifL1vcXNjq1E3HQ+03zntECApIKpf1PXc29Be3S+wF7X2g0qbPcqL97C/zk4gIO4iIEEpU6Z2UD4ACTiICIiAiIgRq06damVZQynqGAIPxBnjhsDg8Ib06VND/ADKar+yJkRAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAyNC9o0L2kohKOhe0aF7SUQI6F7RoXtJRAjoXtGhe0lECOhe0aF7SUQI6F7RoXtJRAjoXtGhe0lECOhe0aF7SUQI6F7T5U0IhJHQE7C527AdZOfCARA09LP8E7kEEb+XYHV5Fc9NgRqtb/IhS4iwjJdqdRdtXsBvL4aVCSUJA2dRv6zbfRqFgNC2FrDSNrWtb5T4MLhwR5F+yO1v1bQNdUzzB0qjBlYab3NhsV1Egi9/ZVm6bjp1F/tLPMFUqOLWVaQraiOtPe7AfAA267i4E2Bw2HJ9hfU+yOpIJPzAPxE+rQojoq9/ZHUm5Pzga987wdOtoKtruF06QTqNttjbYkD657vj6H0A1lUsuhX2W10YXBBaw2G5HUdtxMlMNQp9EUdOigez7Py9J9ejSqUtBUFfxSARYdBbpA1NXPFQOfCPkZ1INw3lXVcC246b/wA5bXvPOnxJharAKhvYEgjT21WJFiQWAsN7322m68KlptpFtxaw6H2h9c+DDUAfYX0/BH4Oy/IdO0DWHNnFO/hKfKzbVDuA2hbeX8M+z3mwwlYYhWumkqxUg2PT1273vPXw6Y9B6enbp8op0qdInSoFzc2AFz6k26mBLQvaNC9pKIEdC9o0L2kogR0L2jQvaSiBHQvaNC9pKIEdC9o0L2kogR0L2jQvaSiBHQvaNC9pKIEdC9o0L2kogR0L2jQvaSiB/9k=" />
+        </a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">about</a>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">products</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="addToCart.html" class="nav-link add-to-cart-button" id="cartValue">
+              <i class="fa-solid fa-cart-shopping"> 0 </i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="section-hero">
+      <div class="container grid grid-two--cols">
+        <div class="section-hero--content">
+          <p class="hero-subheading">Explore the latest in Tech Industry</p>
+          <h1 class="hero-heading">
+            Your Destination for Cutting-Edge Gadgets!
+          </h1>
+          <p class="hero-para">
+            Welcome to Shivam eComStore, your ultimate destination
+            cutting-edge gadgets! Explore the latest in tech innovation add
+            style with us. Shop now and discover a world of possibilities!
+          </p>
+          <div class="hero-btn">
+            <a href="products.html" class="btn">Explore Our products</a>
+          </div>
+        </div>
+        <div class="section-hero-image" data-aos="fade-up" data-aos-delay="600">
+          <figure>
+            <img src="./Images/heroImage.png"
+              alt="coding.languages.using.html.css.js" />
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <section class="section-extra-product">
+    <div class="container grid grid-three--cols">
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra text">
+          <p>new year sale</p>
+          <h3>get and extra 50% off</h3>
+          <a href="#">Show now</a>
+        </div>
+        <div class="extra-img extra-laptop">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN7k6cmg18_6MEJ8znD1NJig27U-MmgFTaFg&s"
+            alt="">
+        </div>
+      </div>
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra text">
+          <p>new year sale</p>
+          <h3>get and extra 50% off</h3>
+          <a href="#">Show now</a>
+        </div>
+        <div class="extra-img extra-laptop">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="">
+        </div>
+      </div>
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra text">
+          <p>new year sale</p>
+          <h3>40% discount on speakers</h3>
+          <a href="#">Show now</a>
+        </div>
+        <div class="extra-img extra-laptop">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu2Yby8JPnajeBCzPnLkKNFC4GsHZU_8YP2w&s"
+            alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section-policy">
+    <div class="container grid grid-four--cols">
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-truck"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>worldwide shipping</p>
+          <p>order above $100</p>
+        </div>
+      </div>
+
+
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-rotate"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>easy 30 day returns</p>
+          <p>back returns in 7 days</p>
+        </div>
+      </div>
+
+
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>manoy back guarantee</p>
+          <p>guarantee with in 30 days</p>
+        </div>
+      </div>
+
+
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-headset"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>easy online support</p>
+          <p>24/7 any time support</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <section class="section-products">
+    <div class="container">
+      <h2 class="section-common--heading">checkout Shivam Store</h2>
+    </div>
+
+    <section class="container">
+      <div id="productContainer"></div>
+    </section>
+
+    <template id="productTemplate">
+      <div class="card" id="cardValue">
+        <article class="information [card]">
+          <span class="category"></span>
+          <div class="imageContainer">
+            <img class="productImage" src="" alt="">
+          </div>
+          <h2 class="productName"></h2>
+          <div class="productRating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="productDescription"></p>
+          <div class="productPriceElement">
+            <p class="productPrice"></p>
+            <p class="productActualPrice"></p>
+          </div>
+          <div class="productStockElement">
+            <p class="productProperty">Total Stocks Available:</p>
+            <p class="productStock"></p>
+          </div>
+          <div class="productQuantityElement">
+            <p class="productProperty">Quantity(pieces):</p>
+            <div class="stockElement">
+              <button class="cartIncrement">+</button>
+              <p class="productQuantity">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+          </button>
+        </article>
+      </div>
+    </template>
+  </section>
+
+
+
+  <section class="section-why--choose">
+    <div class="container">
+        <h2 class="section-common--heading">Why Choose Shivam Store</h2>
+        <p class="section-common--subheading">
+            With a rating and over reviews, Shivam Supermarket is one of the trusted neighbourhood supermarkets.
+            Customers highlight the courteous staff, clean spaces, and competitive pricing as key reasons that keep
+            them coming back.
+        </p>
+    </div>
+
+    <div class="container grid grid-three--cols">
+        <div class="choose-left-div text-align--right">
+            <div class="why-choose--div" data-aos="zoom-in-up" data-aos-delay="0">
+                <p class="common-text--highlight">1</p>
+                <h3 class="section-common--title">Wide Selection</h3>
+                <p>
+                    Shivam Store offers a diverse range of gadgets, from smartphones to
+                    smart home devices, ensuring you find what you need to elevate
+                    your lifestyle and meet your tech requirements.
+                </p>
+            </div>
+
+            <div class="why-choose--div" data-aos="zoom-in-up" data-aos-delay="300">
+                <p class="common-text--highlight">2</p>
+                <h3 class="section-common--title">Quality Assurance</h3>
+                <p>
+                    Every gadget at Shivam Store undergoes rigorous quality checks,
+                    guaranteeing reliability and performance, so you can shop with
+                    confidence knowing you're getting the best.
+                </p>
+            </div>
+
+            <div class="why-choose--div" data-aos="zoom-in-up" data-aos-delay="600">
+                <p class="common-text--highlight">3</p>
+                <h3 class="section-common--title">Competitive Prices</h3>
+                <p>
+                    Enjoy great value with Shivam Store's competitive prices on
+                    high-quality gadgets, making top-of-the-line technology accessible
+                    to all without compromising on quality or performance.
+                </p>
+            </div>
+        </div>
+        <div class="choose-center-div" data-aos="zoom-in" data-aos-delay="300">
+            <figure>
+                <img src="./Images/ecompost.png" alt="thapa technical home page " />
+            </figure>
+        </div>
+        <div class="choose-right-div">
+            <div class="why-choose--div text-align--left" data-aos="zoom-in-up" data-aos-delay="0">
+                <p class="common-text--highlight">4</p>
+                <h3 class="section-common--title">Expert Guidance</h3>
+                <p>
+                    Our knowledgeable staff provides expert guidance, helping you
+                    choose the right gadget to meet your needs and preferences,
+                    ensuring you make informed decisions every step of the way.
+                </p>
+            </div>
+
+            <div class="why-choose--div text-align--left" data-aos="zoom-in-up" data-aos-delay="300">
+                <p class="common-text--highlight">5</p>
+                <h3 class="section-common--title">Convenient Shopping</h3>
+                <p>
+                    With Shivam Store, shopping for gadgets is easy and convenient. Our
+                    user-friendly website and secure payment options ensure a seamless
+                    experience from browsing to checkout, all from the comfort of your
+                    home.
+                </p>
+            </div>
+
+            <div class="why-choose--div text-align--left" data-aos="zoom-in-up" data-aos-delay="600">
+                <p class="common-text--highlight">6</p>
+                <h3 class="section-common--title">Excellent Service</h3>
+                <p>
+                    Shivam Store is committed to providing excellent service to our
+                    customers. From prompt assistance with inquiries to efficient
+                    handling of orders and deliveries, we prioritize your satisfaction
+                    every step of the way.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <footer class="section-footer">
+    <div class="footer-container container">
+      <div class="content_1">
+        <img
+          src="data:image/png;base64,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" alt="">
+        <p>
+          Welcome to Shivam EcomStore, your ultimate destination
+          for cutting-edge gadgets!
+        </p>
+        <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards" />
+      </div>
+      <div class="content_2">
+        <h4>SHOPPING</h4>
+        <a href="#">Computer Store</a>
+        <a href="#">Laptop Store</a>
+        <a href="#">Accessories</a>
+        <a href="#">Sales & Discount</a>
+      </div>
+      <div class="content_3">
+        <h4>Experience</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">Payment Method</a>
+        <a href="#">Delivery</a>
+        <a href="#">Return and Exchange</a>
+      </div>
+      <div class="content_4">
+        <h4>NEWSLETTER</h4>
+        <p>Be the first to know about new <br /> arrivals, sales & promos!</p>
+        <div class="f-mail">
+          <input type="email" placeholder="your email" />
+        </div>
+        <hr />
+      </div>
+    </div>
+    <div class="f-design">
+      <div class="f-design-txt">
+        <p>Design and code by Shivam</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
